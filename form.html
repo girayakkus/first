@@ -1,0 +1,77 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Demo</title>
+  </head>
+  <body>
+    <h1>Forms Demo</h1>
+    <form action="/google.com">
+      <div>
+        <label for="userName">Kullanıcı adınızı girin</label>
+        <input placeholder="kullancı adı" id="userName" />
+      </div>
+      <br />
+      <div>
+        <label for="pasword">Şifrenizi girin</label>
+        <input type="password" id="pasword" />
+      </div>
+      <br />
+      <div>
+        <label for="color">En sevdiğiniz rengi seçin</label>
+        <input type="color" id="color" name="color"/>
+      </div>
+      <br />
+      <div>
+        <label for="number">Sayı giriniz</label>
+        <input type="number" id="number" name="number"/>
+      </div>
+      <br />
+      <div>
+        <button type="submit">Kaydet</button>
+      </div>
+    </form>
+    <!-- ctrl+ö yorum satırı açmak için kullanılır -->
+     <h2>More Forms</h2>
+     <form action="/form.html">
+        <input type="checkbox" name="tos" id="agree" checked >
+        <label for="agree">Kabul ediyorum</label>
+        <div>
+            <label for="xs">XS:</label>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="s">S:</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="m">M:</label>
+            <input type="radio" name="size" id="m" value="m">
+        </div>
+        <div>
+            <label for="animal">Evcil hayvanını seç</label>
+            <select name="animal" id="animal">
+                <option value="seç">seç</option>
+                <option value="fish">balık</option>
+                <option value="cat">ketke</option>
+                <option value="dog">köpke</option>
+            </select>
+        </div>
+        <div>
+            <label for="pay">Ödeme tutarı</label>
+            <input type="range" name="pay" id="pay">
+            <!-- range standart 0-10
+             step kaç kaç artacağı
+             value başlangıç değeri
+             min max değerleri verebilirsin -->
+        </div>
+        <div>
+            <label for="idea">Görüşleriniz</label><br>
+            <textarea name="idea" id="idea" maxlength="3">Görüşleriniz</textarea>
+        </div>
+        <button type="submit">Yolla</button>
+     </form>
+     <h2>validations</h2>
+     <form action="/empty"> 
+       <label for="first">isim giriniz</label>
+       <input type="text" name="first" id="first" required>
+       <button>Sumbit</button>
+      </form>
+  </body>
+</html>
